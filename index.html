@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="css/jquery-ui.min.css">
+</head>
+
+<body>
+	
+	<!-- Datepicker -->
+	<label>Fecha:</label>
+	<input type="text" id="tiempo" />
+
+	<!-- Acordeon -->
+	<div id="accordion" style="width: 100%;">
+	  <h3>Alumno</h3>
+	  <div>
+	    <p>Primera seccion</p>
+	  </div>
+	  
+	  <h3>Docente</h3>
+	  <div>
+	    <p>Calificaciones</p>
+	  </div>
+	  
+	  <h3>Administrador</h3>
+	  <div>
+	    <p>Saludos </p>
+	    <ul>
+	      <li>List item one</li>
+	      <li>List item two</li>
+	    </ul>
+	  </div>
+  </div>
+	<!-- /Acordeon -->
+	
+<script src="js/jquery.min.js"></script>
+<script src="js/jquery-ui.min.js"></script>
+	<script>
+		
+	$(function(){
+		
+		$("#tiempo").datepicker({
+			changeMonth: true,
+      changeYear: true,
+      dateFormat: "yy-mm-dd"
+		});
+
+		$("#accordion").accordion();
+
+	});
+
+	</script>
+	
+</body>
+</html>
