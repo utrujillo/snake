@@ -6,10 +6,26 @@
   top: 100px;
 }
 
-#culebra{
+#culebra, .comidaCulebra{
   width: 10px;
   height: 10px;
   position: absolute;
-  background: #000;
   border-radius: 50%;
 }
+
+#culebra{
+  background: #000;
+
+  left: 0;
+  top:0;
+}
+
+  .comidaCulebra{
+    background: #45BF55;
+    animation: blinker 1s linear infinite;
+  }
+
+  @keyframes blinker{
+    50% { opacity: 0; }
+  }
+
